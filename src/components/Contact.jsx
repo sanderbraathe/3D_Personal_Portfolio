@@ -27,19 +27,16 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-  //2Vk0RgRFdKu2BwdUq (Key)
-  // template_fhvm1wl
-  //service_qd08hon
 
     emailjs.send(
-      'service_qd08hon',
-      'template_fhvm1wl',
+      'yourserviceid',
+      'yourtemplateid',
       { from_name: form.name,
         to_name: 'Sander',
         from_email: form.email,
-        to_email: 'sanderbraathe@gmail.com',
+        to_email: 'youremail@gmail.com',
         message: form.message,
-      }, '2Vk0RgRFdKu2BwdUq'
+      }, 'xxxxxxxxxxxxxxxx'
       ).then(() => {
         setLoading(false);
         alert('Thank you. I will get back as soon as possible!');
